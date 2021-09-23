@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="table-content">
-      <div class="title-table"><h1>Categorias</h1></div>      
+      <div class="title-table"><h1></h1></div>      
     </div>
   </main>  
 </template>
@@ -25,11 +25,13 @@ export default {
 
   .table-content {
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    width: 900px;
-    height: 730px;   
-    background-color: lawngreen;
+    margin: 130px 40px 100px 20px;   
+    width: 1630px;
+    height: 720px;   
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   }
 
 </style>

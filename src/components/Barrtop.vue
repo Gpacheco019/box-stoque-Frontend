@@ -2,13 +2,13 @@
   <div class="content-top">
     <div class="logo-name">
        <h2>Box Stoque</h2>
-    </div>
-    <div class="content-img">
-      <h2>Logo</h2>
+      <!-- <div > -->
+        <img class="content-img" src="../assets/logo-box-white.png" alt="logo-box">
+      <!-- </div> -->
     </div>
     <div class="barr-search">
       <input type="text" placeholder="Search...">
-      <button class="submit-search"></button>
+      <button class="submit-search"><i class="fas fa-search"></i></button>
     </div>
     <!-- <div class="logo-perfil"> -->
     <!-- </div> -->
@@ -33,33 +33,44 @@ export default {
 </script>
 
 <style scoped>
-  
+  .logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+  }
   .logo-name h2 {
-    color: var(--color-text-light);    
+    color: var(--color-text-light);
+    margin-left: 20px;    
   }
 
   .content-top {
     width: 100vw;
     height: 80px;
     background-color: var(--color-background-home); 
-    padding: 15px;
+    padding: 5px 10px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
-    align-items: center; 
+    grid-template-columns: repeat(6, 1fr); 
+    align-items: center;
+    position: fixed;
+    box-shadow: 1px 1px 5px; 
   }
 
   .content-img {
-    width: 100px;
-    height: 45px;
-    background-color: khaki;    
-    grid-column: 2 / 4;
-    margin: 0 10px 0 10px; 
-  } 
-
+    max-width: 100%;
+    height: 60px;        
+    grid-column: 1 / 4;
+    margin: 0 10px 0 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }  
   
-  .logo-perfil {
-    width: 50px;
-    height: 50px;
+  .logo-perfil {    
+    width: 60px;
+    height: 60px;
     background-color: lightcoral;
     border-radius: 50%;
     display:flex;
@@ -74,7 +85,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 40px;
       
   }
 
@@ -89,6 +100,10 @@ export default {
     border-radius: 5px;
 
     padding: 5px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
   }
 
    .barr-search button{
